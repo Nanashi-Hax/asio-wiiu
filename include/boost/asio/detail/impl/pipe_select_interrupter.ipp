@@ -22,6 +22,7 @@
 #if !defined(__CYGWIN__)
 #if !defined(__SYMBIAN32__)
 #if !defined(BOOST_ASIO_HAS_EVENTFD)
+#if !defined(BOOST_ASIO_WIIU)
 
 #include <fcntl.h>
 #include <sys/stat.h>
@@ -122,6 +123,7 @@ bool pipe_select_interrupter::reset()
 
 #include <boost/asio/detail/pop_options.hpp>
 
+#endif // !defined(BOOST_ASIO_WIIU)
 #endif // !defined(BOOST_ASIO_HAS_EVENTFD)
 #endif // !defined(__SYMBIAN32__)
 #endif // !defined(__CYGWIN__)

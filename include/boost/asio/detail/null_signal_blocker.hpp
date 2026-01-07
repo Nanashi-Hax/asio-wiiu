@@ -21,7 +21,8 @@
   || defined(BOOST_ASIO_WINDOWS) \
   || defined(BOOST_ASIO_WINDOWS_RUNTIME) \
   || defined(__CYGWIN__) \
-  || defined(__SYMBIAN32__)
+  || defined(__SYMBIAN32__) \
+  || defined(BOOST_ASIO_WIIU)
 
 #include <boost/asio/detail/noncopyable.hpp>
 
@@ -67,5 +68,6 @@ public:
        // || defined(BOOST_ASIO_WINDOWS_RUNTIME)
        // || defined(__CYGWIN__)
        // || defined(__SYMBIAN32__)
+       // || defined(BOOST_ASIO_WIIU)
 
 #endif // BOOST_ASIO_DETAIL_NULL_SIGNAL_BLOCKER_HPP
