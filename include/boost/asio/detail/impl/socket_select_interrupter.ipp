@@ -21,7 +21,8 @@
 
 #if defined(BOOST_ASIO_WINDOWS) \
   || defined(__CYGWIN__) \
-  || defined(__SYMBIAN32__)
+  || defined(__SYMBIAN32__) \
+  || defined(BOOST_ASIO_WIIU)
 
 #include <cstdlib>
 #include <boost/asio/detail/socket_holder.hpp>
@@ -181,6 +182,7 @@ bool socket_select_interrupter::reset()
 #endif // defined(BOOST_ASIO_WINDOWS)
        // || defined(__CYGWIN__)
        // || defined(__SYMBIAN32__)
+       // || defined(BOOST_ASIO_WIIU)
 
 #endif // !defined(BOOST_ASIO_WINDOWS_RUNTIME)
 

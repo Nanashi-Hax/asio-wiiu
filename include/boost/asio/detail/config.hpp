@@ -1432,4 +1432,11 @@
 # endif // !defined(BOOST_ASIO_DISABLE_SNPRINTF)
 #endif // !defined(BOOST_ASIO_HAS_SNPRINTF)
 
+// WiiU target.
+#if !defined(BOOST_ASIO_WIIU)
+# if defined(__WIIU__)
+#  define BOOST_ASIO_WIIU 1
+# endif
+#endif // !defined(BOOST_ASIO_WIIU)
+
 #endif // BOOST_ASIO_DETAIL_CONFIG_HPP

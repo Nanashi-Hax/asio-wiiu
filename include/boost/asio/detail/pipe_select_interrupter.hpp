@@ -22,6 +22,7 @@
 #if !defined(__CYGWIN__)
 #if !defined(__SYMBIAN32__)
 #if !defined(BOOST_ASIO_HAS_EVENTFD)
+#if !defined(BOOST_ASIO_WIIU)
 
 #include <boost/asio/detail/push_options.hpp>
 
@@ -82,6 +83,7 @@ private:
 # include <boost/asio/detail/impl/pipe_select_interrupter.ipp>
 #endif // defined(BOOST_ASIO_HEADER_ONLY)
 
+#endif // !defined(BOOST_ASIO_WIIU)
 #endif // !defined(BOOST_ASIO_HAS_EVENTFD)
 #endif // !defined(__SYMBIAN32__)
 #endif // !defined(__CYGWIN__)

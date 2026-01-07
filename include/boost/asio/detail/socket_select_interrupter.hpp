@@ -21,7 +21,8 @@
 
 #if defined(BOOST_ASIO_WINDOWS) \
   || defined(__CYGWIN__) \
-  || defined(__SYMBIAN32__)
+  || defined(__SYMBIAN32__) \
+  || defined(BOOST_ASIO_WIIU)
 
 #include <boost/asio/detail/socket_types.hpp>
 
@@ -87,6 +88,7 @@ private:
 #endif // defined(BOOST_ASIO_WINDOWS)
        // || defined(__CYGWIN__)
        // || defined(__SYMBIAN32__)
+       // || defined(BOOST_ASIO_WIIU)
 
 #endif // !defined(BOOST_ASIO_WINDOWS_RUNTIME)
 
