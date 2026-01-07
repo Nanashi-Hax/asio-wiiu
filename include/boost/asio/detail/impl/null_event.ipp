@@ -17,7 +17,7 @@
 
 #include <boost/asio/detail/config.hpp>
 
-#if defined(BOOST_ASIO_WINDOWS_RUNTIME)
+#if defined(BOOST_ASIO_WINDOWS_RUNTIME) || defined(BOOST_ASIO_WIIU)
 # include <thread>
 #elif defined(BOOST_ASIO_WINDOWS) || defined(__CYGWIN__)
 # include <boost/asio/detail/socket_types.hpp>
